@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{name}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
 
+<div class="jumbotron text-center">
+  <h1>Movie dekho</h1>
+  <p>Find as many movies as you like, just don't study</p>
+       <form action="http://localhost:5000/logout">
+        <input type="submit" value="Logout" class="btn btn-danger">
+      </form>
+</div>
+
+<div class="container">
+  <div class="row">
+     <div class="col-sm-3">
+      <h3>Add friend</h3>
+        <form action="http://localhost:5000/friend" method="POST">
+          Choose friend's name:<br>
+          <select name="friend" >
+          <option>Select an option</option>
+          {%for u in users%}
+          <option value="{{u}}">{{u}}</option>
+          {%endfor%}
+        </select>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+    </div>
+    <div class="col-sm-3">
+      <h3>Like Movie</h3>
+
+      <form action="http://localhost:5000/likemovie" method="POST">
+        Choose movie you like:<br>
+        <select name="LikeMovie" >
+        <option>Select an option</option>
+          {%for m in movies%}
+          <option value="{{m}}">{{m}}</option>
+          {%endfor%}
+        </select>
+        <br> <br>
+        <input type="submit" value="Submit">
+      </form>
+
+    </div>
+
+    <div class="col-sm-3">
+      <h3>List movie according to genre</h3>
+
+      <form action="http://localhost:5000/genre" method="POST">
+        Select genre you like:<br>
+        <select name="Genre" >
+          {%for g in genre%}
+          <option value="{{g}}">{{g}}</option>
+          {%endfor%}
+        </select>
+        <br> <br>
+        <input type="submit" value="Suggest">
+      </form>
+
+    </div>
+
+    <div class="col-sm-3">
+      <h3>Follow actor</h3>
+      <form action="http://localhost:5000/followactor" method="POST">
+        Enter actor you like:<br>
+       <select name="actorName" >
+          {%for a in actors%}
+          <option value="{{a}}">{{a}}</option>
+          {%endfor%}
+        </select>
+        <br> <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-3">
+      <h3>Get suggestions</h3>
+      <form action="http://localhost:5000/suggested" method="POST">
+        <input type="submit" value="See suggestion">
+      </form>
+    </div>
+  </div>
+</div>
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--&lt;!&ndash;    <div class="col-sm-6">&ndash;&gt;-->
+<!--&lt;!&ndash;      <h3>Show checkboxes:</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;      <form action=" ">&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="checkbox" name="Name1" value="Ranbir">Ranbir <br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="checkbox" name="Name2" value="Siddharth">Siddharth <br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="checkbox" name="Name3" value="Shahrukh">Shahrukh <br><br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="submit" value="Submit">&ndash;&gt;-->
+<!--&lt;!&ndash;      </form>&ndash;&gt;-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+</body>
+</html>
