@@ -1,0 +1,89 @@
+
+match (m:Movie{title:'The Matrix'}) set m.genre=['Action','Sci-Fi'];
+
+
+match (m:Movie{title:'The Devil\'s Advocate'}) set m.genre=[ 'Drama','Mystery','Thriller' ];
+
+
+match (m:Movie{title:'A Few Good Men'}) set m.genre=['Drama', 'Thriller'];
+
+
+match (m:Movie{title:'Top Gun'}) set m.genre=['Action','Drama'];
+
+
+match (m:Movie{title:'Jerry Maguire'}) set m.genre=['Comedy','Drama','Romance'];
+
+
+match (m:Movie{title:'Stand By Me'}) set m.genre=['Adventure', 'Drama'];
+
+
+
+match (m:Movie{title:'As Good as It Gets'}) set m.genre=['Comedy', 'Drama', 'Romance'];
+
+
+match (m:Movie{title:'Snow Falling on Cedars'}) set m.genre=['Drama', 'Mystery', 'Romance'];
+
+
+match (m:Movie{title:'You\'ve Got Mail'}) set m.genre=['Comedy','Drama', 'Romance'];
+
+
+match (m:Movie{title:'Sleepless in Seattle'}) set m.genre=['Comedy','Drama','Romance'];
+
+
+match (m:Movie{title:'Joe Versus the Volcano'}) set m.genre=['Comedy','Romance'];
+
+
+match (m:Movie{title:'When Harry Met Sally'}) set m.genre=['Comedy','Drama','Romance'];
+
+
+match (m:Movie{title:'That Thing You Do'}) set m.genre=['Comedy','Drama','Music'];
+
+
+match (m:Movie{title:'The Replacements'}) set m.genre=['Comedy','Sport'];
+
+
+match (m:Movie{title:'RescueDawn'}) set m.genre=['Action','Adventure','Biography'];
+
+
+match (m:Movie{title:'The Birdcage'}) set m.genre=['Comedy'];
+
+
+match (m:Movie{title:'Unforgiven'}) set m.genre=['Drama','Western'];
+
+match (m:Movie{title:'Johnny Mnemonic'}) set m.genre=['Action','Drama','Sci-Fi'];
+
+match (m:Movie{title:'Cloud Atlas'}) set m.genre=['Action','Drama','Mystery'];
+
+match (m:Movie{title:'The Da Vinci Code'}) set m.genre=['Mystery','Thriller'];
+
+match (m:Movie{title:'V for Vendetta'}) set m.genre=['Action','Drama','Sci-Fi'];
+
+match (m:Movie{title:'Speed Racer'}) set m.genre=['Action','Adventure','Comedy'];
+
+match (m:Movie{title:'Ninja Assassin'}) set m.genre=['Action','Thriller'];
+
+match (m:Movie{title:'The Green Mile'}) set m.genre=['Crime','Drama','Fantasy' ];
+
+match (m:Movie{title:'Frost/Nixon'}) set m.genre=['Biography','Drama','History'];
+
+match (m:Movie{title:'Hoffa'}) set m.genre=['Biography', 'Crime', 'Drama'];
+
+match (m:Movie{title:'Apollo 13'}) set m.genre=['Adventure', 'Drama', 'History'];
+
+match (m:Movie{title:'Twister'}) set m.genre=['Action', 'Adventure', 'Thriller'];
+
+match (m:Movie{title:'Cast Away'}) set m.genre=['Adventure','Drama','Romance'];
+
+match (m:Movie{title:'One Flew Over the Cuckoo\'s Nest'}) set m.genre=['Drama'];
+
+match (m:Movie{title:'Something\'s Gotta Give'}) set m.genre=['Comedy', 'Drama', 'Romance'];
+
+match (m:Movie{title:'Bicentennial Man'}) set m.genre=['Comedy', 'Drama', 'Sci-Fi'];
+
+match (m:Movie{title:'Charlie Wilson\'s War'}) set m.genre=['Biography','Comedy','Drama'];
+
+match (m:Movie{title:'The Polar Express'}) set m.genre=[ 'Animation', 'Adventure','Comedy'];
+
+match (m:Movie{title:'A League of Their Own'}) set m.genre=['Comedy','Drama','Family'];
+
+
